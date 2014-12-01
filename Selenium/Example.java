@@ -71,6 +71,7 @@ public class Example  extends TestCase{
 
     @Test
     public void testValidUsers() throws InterruptedException{
+		System.out.println("TESTING USERNAME AND PASSWORDS");
         WebDriver driver = new HtmlUnitDriver();
         Thread.sleep(10000);
         for(User user : USERS){
@@ -91,11 +92,12 @@ public class Example  extends TestCase{
             
             assertTrue(driver.getTitle().contains("Online temperature conversion"));
         }
-        System.out.println("All Valid users passed!");
+        System.out.println("All Usernames and Passwords Passed!\n");
     }
 
     @Test
     public void testUsernameCaseValidUsers() throws InterruptedException{
+		System.out.println("TESTING CASE-SENSITIVE USERNAMES");
         WebDriver driver = new HtmlUnitDriver();
         Thread.sleep(10000);
         for(User user : CASE_USERS){
@@ -116,11 +118,12 @@ public class Example  extends TestCase{
             assertTrue(driver.getTitle().contains("Online temperature conversion"));
         
         }
-        System.out.println("All Case Valid users passed!");
+        System.out.println("All Case-Sensitive Username Testcases Passed!\n");
     }
     
     @Test
     public void testPasswordCaseValidUsers() throws InterruptedException{
+		System.out.println("TESTING CASE-SENSITIVE PASSWORDS");
         WebDriver driver = new HtmlUnitDriver();
         Thread.sleep(10000);
         for(User user : CASE_PASSWORDS){
@@ -141,11 +144,12 @@ public class Example  extends TestCase{
             assertFalse(driver.getTitle().contains("Online temperature conversion"));
         
         }
-        System.out.println("All Case Valid users passed!");
+        System.out.println("All Case-Sensitive Password Testcases Passed!\n");
     }
 
     @Test
     public void testPrecision() throws InterruptedException{
+		System.out.println("TESTING TEMPERATURE PRECISIONS");
         WebDriver driver = new HtmlUnitDriver();
         Thread.sleep(10000);
         for(String temp : TEMP_IN_FARENHEIT){
@@ -178,6 +182,6 @@ public class Example  extends TestCase{
             //System.out.println(df.format(temp_in_c));
             
         }
-        System.out.println("All Case Valid users passed!");
+        System.out.println("All Precision Testcases Passed!\n");
     }
 }
