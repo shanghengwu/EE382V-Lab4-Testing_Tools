@@ -1,0 +1,20 @@
+[EMMA v2.0.5312 report, generated Sat Nov 29 01:30:10 CST 2014]
+-------------------------------------------------------------------------------
+OVERALL COVERAGE SUMMARY:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+0%   (0/1)!	0%   (0/2)!	0%   (0/15)!	0%   (0/5)!	all classes
+
+OVERALL STATS SUMMARY:
+
+total packages:	1
+total classes:	1
+total methods:	2
+total executable files:	1
+total executable lines:	5
+
+COVERAGE BREAKDOWN BY PACKAGE:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+0%   (0/1)!	0%   (0/2)!	0%   (0/15)!	0%   (0/5)!	example
+-------------------------------------------------------------------------------
